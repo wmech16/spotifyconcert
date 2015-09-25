@@ -1,0 +1,14 @@
+<div class="wrapper">
+
+    <div class='search-container'>
+        <form ng-submit="getArtistData()">
+            <input class="search-bar" type='search' ng-model='searchArtist' placeholder="Search Artist">
+        </form>
+        <div class = "img-div" ng-repeat='artist in artistData'>
+           <img  class = "artist-img" ng-click = "getAlbumData(artist.id, artist.name)" ng-src="{{artist.images[1].url}}" title = "{{artist.name}}">
+
+    </div>
+
+
+
+</div>
